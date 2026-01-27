@@ -3,31 +3,31 @@
 
 def calculator():
     try:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        a = float(input("Enter first number: "))
+        b = float(input("Enter second number: "))
+        op = input("Operation (+ - * /): ")
 
-        operation = input("Enter operation (+, -, *, /): ")
-
-        if operation == "+":
-            result = num1 + num2
-        elif operation == "-":
-            result = num1 - num2
-        elif operation == "*":
-            result = num1 * num2
-        elif operation == "/":
-            result = num1 / num2
+        if op == "+":
+            result = a + b
+        elif op == "-":
+            result = a - b
+        elif op == "*":
+            result = a * b
+        elif op == "/":
+            result = a / b
         else:
             print("Invalid operation")
             return
 
     except ValueError:
-        print("Error: Please enter valid numbers.")
+        print("Error: Invalid number input")
     except ZeroDivisionError:
-        print("Error: Division by zero is not allowed.")
+        print("Error: Division by zero")
     else:
         print("Result:", result)
     finally:
-        print("Calculator execution completed.")
+        print("Calculator finished")
 
 
-calculator()
+if __name__ == "__main__":
+    calculator()
