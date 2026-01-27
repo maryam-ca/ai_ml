@@ -2,27 +2,32 @@
 # Reusable utility functions
 
 def calculate_sum(*args):
-    """
-    Accepts multiple numbers and returns their sum
-    """
-    total = 0
-    for num in args:
-        total += num
-    return total
+    # Time Complexity: O(n)
+    return sum(args)
 
 
 def calculate_average(*args):
-    """
-    Returns average of given numbers
-    """
     if len(args) == 0:
         return 0
     return sum(args) / len(args)
 
 
 def print_details(**kwargs):
-    """
-    Prints key-value pairs nicely
-    """
     for key, value in kwargs.items():
         print(f"{key}: {value}")
+
+
+# Lambda function
+square = lambda x: x * x
+
+
+# Tuple example
+dimensions = (10, 20)
+
+
+if __name__ == "__main__":
+    print("Sum:", calculate_sum(1, 2, 3))
+    print("Average:", calculate_average(10, 20, 30))
+    print("Square:", square(5))
+    print("Dimensions:", dimensions)
+    print_details(name="Ali", role="Student")
