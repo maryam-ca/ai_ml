@@ -1,55 +1,54 @@
-📌 Task 4 – Python Libraries & Packaging
-📖 Overview
+Task 4 – Python Libraries & Packaging
+Introduction
 
-This task focuses on learning how to write clean, modular, and production-ready Python code.
-The project demonstrates how to organize Python programs using modules, virtual environments, and custom packages, along with logging and proper documentation.
+This task is part of Week 1 Python assignments and focuses on learning how to build clean, modular, and production-ready Python projects.
 
-This task helps in understanding how real-world Python projects are structured and managed.
+The main purpose of this task is to help learners understand how Python projects are structured in real-world development using modules, virtual environments, custom packages, and logging.
 
-✨ Features
-🔹 Modular Programming
+This task also introduces best practices such as dependency management, clean folder organization, and proper documentation, which are essential for professional Python development.
 
-Python code is divided into multiple modules.
+Objectives of This Task
 
-Each module has a single responsibility.
+To understand modular programming in Python
 
-Modules are reused using proper import statements.
+To learn how to create and use a virtual environment
 
-🔹 Virtual Environment
+To understand dependency management using requirements.txt
 
-A virtual environment (venv) is created to isolate the project.
+To create and use a custom Python package
 
-Prevents conflicts between project dependencies.
+To learn basic logging for production-ready code
 
-Ensures clean and safe package management.
+To follow clean and professional project structure
 
-🔹 Custom Python Package
+Key Features
+Modular Programming
 
-A custom package named mypackage is created.
+Python code is divided into multiple modules, where each module performs a specific task.
+This makes the code reusable, readable, and easy to maintain.
 
-Proper folder structure is followed.
+Virtual Environment
 
-__init__.py is used to expose package functions.
+A virtual environment (venv) is used to isolate the project dependencies.
+This helps avoid conflicts between different Python projects and ensures a clean development environment.
 
-Package is installed locally using pip install .
+Custom Python Package
 
-🔹 Logging
+A custom Python package named mypackage is created using proper packaging standards.
+The package includes multiple modules and uses __init__.py to expose required functionality.
+The package is installed locally using pip install ..
 
-Python’s built-in logging module is used.
+Logging
 
-Logs are stored in a file instead of using print.
+Python’s built-in logging module is used instead of print statements.
+Logs are stored in a file, making the project more suitable for real-world and production use.
 
-Makes the project more production-ready.
+Clean Project Structure
 
-🔹 Clean Project Structure
+The project follows a clean and logical folder structure.
+Separate folders are used for modules, packages, tests, and documentation, making the project easy to understand and extend.
 
-Logical folder organization.
-
-Separate folders for modules, package, and tests.
-
-Easy to read, maintain, and extend.
-
-📁 Project Structure
+Project Structure
 Task4/
 │
 ├── modules/
@@ -73,48 +72,56 @@ Task4/
 ├── requirements.txt
 └── README.md
 
-▶️ How to Run the Project
-1️⃣ Create Virtual Environment
+How to Run This Project
+Step 1: Create Virtual Environment
 python -m venv venv
 
-2️⃣ Activate Virtual Environment
+Step 2: Activate Virtual Environment
 
-Windows
+For Windows
 
 venv\Scripts\activate
 
 
 After activation, (venv) will appear in the terminal.
 
-3️⃣ Install Dependencies
+Step 3: Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Install Custom Package
+Step 4: Install Custom Package
 
 Navigate to the mypackage folder:
 
 cd mypackage
 pip install .
 
-5️⃣ Run Test Files
+Step 5: Run Test Files
 
-Go back to Task4 folder:
+Go back to the Task4 folder:
 
 cd ..
 python test_package.py
 
-✅ Expected Output
+Expected Output
 20
 nohtyp
 
-🧪 Testing
 
-test_modules.py tests modular scripts.
+This output confirms that the custom package is installed correctly and working as expected.
 
-test_package.py tests the custom Python package.
+Testing
 
-Successful output confirms correct installation and imports.
+test_modules.py is used to test modular scripts
 
-🧑‍💻 Author
+test_package.py is used to test the custom Python package
+
+Successful execution confirms correct imports and package installation
+
+Conclusion
+
+This task demonstrates how Python projects are developed in a professional environment.
+By completing this task, learners gain practical experience in modular programming, package creation, dependency management, and clean code organization.
+
+Author
 
 Maryam Fatima
