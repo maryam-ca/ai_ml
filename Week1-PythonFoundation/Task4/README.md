@@ -19,34 +19,48 @@ To create and use a custom Python package
 
 To learn basic logging for production-ready code
 
-To follow clean and professional project structure
-
 Key Features
 Modular Programming
 
-Python code is divided into multiple modules, where each module performs a specific task.
-This makes the code reusable, readable, and easy to maintain.
+Python code is divided into multiple modules
+
+Each module performs a single responsibility
+
+Modules are reused using proper import statements
 
 Virtual Environment
 
-A virtual environment (venv) is used to isolate the project dependencies.
-This helps avoid conflicts between different Python projects and ensures a clean development environment.
+A virtual environment (venv) is used to isolate the project
+
+Prevents dependency conflicts between projects
+
+Ensures a clean development environment
 
 Custom Python Package
 
-A custom Python package named mypackage is created using proper packaging standards.
-The package includes multiple modules and uses __init__.py to expose required functionality.
-The package is installed locally using pip install ..
+A custom Python package named mypackage is created
+
+Proper folder structure is followed
+
+__init__.py is used to expose package functions
+
+Package is installed locally using pip install .
 
 Logging
 
-Python’s built-in logging module is used instead of print statements.
-Logs are stored in a file, making the project more suitable for real-world and production use.
+Python’s built-in logging module is used
+
+Logs are written to a file instead of using print
+
+Makes the project production-ready
 
 Clean Project Structure
 
-The project follows a clean and logical folder structure.
-Separate folders are used for modules, packages, tests, and documentation, making the project easy to understand and extend.
+Logical and readable folder organization
+
+Separate folders for modules, package, and tests
+
+Easy to maintain and extend
 
 Project Structure
 Task4/
@@ -72,14 +86,11 @@ Task4/
 ├── requirements.txt
 └── README.md
 
-How to Run This Project
+How to Run the Project
 Step 1: Create Virtual Environment
 python -m venv venv
 
-Step 2: Activate Virtual Environment
-
-For Windows
-
+Step 2: Activate Virtual Environment (Windows)
 venv\Scripts\activate
 
 
@@ -89,16 +100,10 @@ Step 3: Install Dependencies
 pip install -r requirements.txt
 
 Step 4: Install Custom Package
-
-Navigate to the mypackage folder:
-
 cd mypackage
 pip install .
 
-Step 5: Run Test Files
-
-Go back to the Task4 folder:
-
+Step 5: Run Test File
 cd ..
 python test_package.py
 
@@ -107,20 +112,20 @@ Expected Output
 nohtyp
 
 
-This output confirms that the custom package is installed correctly and working as expected.
+This confirms that the package is installed and working correctly.
 
 Testing
 
-test_modules.py is used to test modular scripts
+test_modules.py tests modular scripts
 
-test_package.py is used to test the custom Python package
+test_package.py tests the custom Python package
 
-Successful execution confirms correct imports and package installation
+Successful execution confirms correct imports and setup
 
 Conclusion
 
-This task demonstrates how Python projects are developed in a professional environment.
-By completing this task, learners gain practical experience in modular programming, package creation, dependency management, and clean code organization.
+This task demonstrates how Python projects are structured in professional environments.
+It provides hands-on experience with modular programming, package creation, dependency management, and clean project organization.
 
 Author
 
