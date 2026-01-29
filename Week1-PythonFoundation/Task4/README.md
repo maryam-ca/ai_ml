@@ -1,11 +1,9 @@
-📘 Task 4 – Python Libraries & Packaging
-🔰 Introduction
+📘 TASK 4 – PYTHON LIBRARIES & PACKAGING
+🔰 INTRODUCTION
 
-This task is part of Week 1 Python assignments.
-It focuses on learning how to build clean, modular, and production-ready Python projects.
+This task is part of Week 1 Python assignments and focuses on learning how to build clean, modular, and production-ready Python projects.
 
-The main purpose of this task is to help learners understand how real-world Python projects are structured.
-It introduces important concepts such as:
+The main purpose of this task is to help learners understand how real-world Python projects are structured using:
 
 Modules
 
@@ -15,11 +13,9 @@ Custom Python packages
 
 Logging
 
-Dependency management
+This task also introduces best practices such as dependency management, clean folder organization, and proper documentation, which are essential for professional Python development.
 
-These practices are very important for professional Python development.
-
-🎯 Objectives of This Task
+🎯 OBJECTIVES OF THIS TASK
 
 The objectives of this task are:
 
@@ -33,16 +29,16 @@ To create and use a custom Python package
 
 To learn basic logging for production-ready code
 
-⭐ Key Features
-🔹 Modular Programming
+⭐ KEY FEATURES
+🔹 MODULAR PROGRAMMING
 
 Python code is divided into multiple modules
 
-Each module performs only one responsibility
+Each module performs a single responsibility
 
 Modules are reused using proper import statements
 
-This makes the code:
+This approach makes the code:
 
 Clean
 
@@ -50,7 +46,7 @@ Reusable
 
 Easy to maintain
 
-🔹 Virtual Environment
+🔹 VIRTUAL ENVIRONMENT
 
 A virtual environment (venv) is used to isolate the project.
 
@@ -58,13 +54,13 @@ Benefits:
 
 Prevents dependency conflicts
 
-Keeps project dependencies separate
+Keeps project libraries separate
 
-Provides a clean development environment
+Ensures a clean development environment
 
-🔹 Custom Python Package
+🔹 CUSTOM PYTHON PACKAGE
 
-A custom package named mypackage is created
+A custom Python package named mypackage is created
 
 Proper folder structure is followed
 
@@ -72,9 +68,9 @@ __init__.py is used to expose package functions
 
 Package is installed locally using pip install .
 
-This simulates real-world package development.
+This simulates real-world Python package development.
 
-🔹 Logging
+🔹 LOGGING
 
 Python’s built-in logging module is used
 
@@ -86,11 +82,11 @@ Logging helps in:
 
 Debugging
 
-Monitoring
-
 Error tracking
 
-🔹 Clean Project Structure
+Monitoring application behavior
+
+🔹 CLEAN PROJECT STRUCTURE
 
 Logical and readable folder organization
 
@@ -104,7 +100,7 @@ Tests
 
 Easy to maintain and extend
 
-📂 Project Structure
+📂 PROJECT STRUCTURE
 Task4/
 │
 ├── modules/
@@ -129,61 +125,61 @@ Task4/
 └── README.md
 
 
-📌 Each file and folder has a clear responsibility.
+Each file and folder has a clear and specific responsibility.
 
-▶️ How to Run the Project
-Step 1: Create Virtual Environment
+▶️ HOW TO RUN THE PROJECT
+✅ STEP 1: CREATE VIRTUAL ENVIRONMENT
 python -m venv venv
 
-Step 2: Activate Virtual Environment (Windows)
+✅ STEP 2: ACTIVATE VIRTUAL ENVIRONMENT (WINDOWS)
 venv\Scripts\activate
 
 
 After activation, (venv) will appear in the terminal.
 
-Step 3: Install Dependencies
+✅ STEP 3: INSTALL DEPENDENCIES
 pip install -r requirements.txt
 
-Step 4: Install Custom Package
+✅ STEP 4: INSTALL CUSTOM PACKAGE
 cd mypackage
 pip install .
 
-Step 5: Run Test File
+✅ STEP 5: RUN TEST FILE
 cd ..
 python test_package.py
 
-✅ Expected Output
+📤 EXPECTED OUTPUT
 20
 nohtyp
 
 
-This output confirms that:
+This confirms that:
 
 The package is installed correctly
 
-Imports are working
+Imports are working properly
 
-Functions are executing properly
+Functions are executing as expected
 
-🧪 Testing
+🧪 TESTING
 
-test_modules.py tests modular scripts
+test_modules.py is used to test modular scripts
 
-test_package.py tests the custom Python package
+test_package.py is used to test the custom Python package
 
 Successful execution confirms:
 
-Correct project structure
+Correct imports
 
-Proper imports
+Proper setup
 
-Clean setup
+Clean project structure
 
-🏁 Conclusion
+🏁 CONCLUSION
 
 This task demonstrates how professional Python projects are structured.
 
-It provides hands-on experience with:
+It provides practical experience with:
 
 Modular programming
 
@@ -197,8 +193,8 @@ Logging
 
 Clean project organization
 
-These skills are essential for real-world Python development.
+These concepts are essential for real-world Python development.
 
-✍️ Author
+✍️ AUTHOR
 
 Maryam Fatima
