@@ -44,3 +44,28 @@ def delete_student(student_id):
 
 def get_all_students():
     return load_students()
+
+def update_student(student_id, updated_data):
+    students = load_students()
+    found = False
+
+    for s in students:
+        if s["id"] == student_id:
+            s.update(updated_data)
+            found = True
+            break
+
+    if not found:
+        raise ValueError("Student not found")
+
+    save_students(students)
+
+
+def search_students(query):
+    students = load_students()
+    query = query.lower()
+
+    return [
+        s for s in students
+        if query in s["id"].lower() or query in s["name"].lower()
+    ]
